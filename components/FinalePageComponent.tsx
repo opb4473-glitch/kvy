@@ -42,10 +42,10 @@ export default function FinalePageComponent() {
           <span
             key={piece.id}
             className={`absolute top-0 animate-confetti ${piece.color} ${piece.shape === 0
-                ? 'w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full'
-                : piece.shape === 1
-                  ? 'w-1.5 h-2.5 sm:w-2 sm:h-3.5 rounded-sm'
-                  : 'w-2 h-2 sm:w-3 sm:h-3 rotate-45'
+              ? 'w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full'
+              : piece.shape === 1
+                ? 'w-1.5 h-2.5 sm:w-2 sm:h-3.5 rounded-sm'
+                : 'w-2 h-2 sm:w-3 sm:h-3 rotate-45'
               }`}
             style={{
               left: `${piece.left}%`,
@@ -149,7 +149,7 @@ export default function FinalePageComponent() {
           </p>
 
           <div className="mt-8 text-foreground/50 text-xs tracking-[0.3em] uppercase">
-            Made with love, just for you
+            Made Just for you from a friend
           </div>
         </div>
       </div>

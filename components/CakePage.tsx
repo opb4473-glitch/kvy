@@ -132,10 +132,10 @@ export default function CakePage() {
                 <span
                   key={piece.id}
                   className={`absolute top-0 animate-confetti ${piece.color} ${piece.shape === 0
-                      ? 'w-2 h-2 rounded-full'
-                      : piece.shape === 1
-                        ? 'w-1.5 h-3 rounded-sm'
-                        : 'w-2.5 h-2.5 rotate-45'
+                    ? 'w-2 h-2 rounded-full'
+                    : piece.shape === 1
+                      ? 'w-1.5 h-3 rounded-sm'
+                      : 'w-2.5 h-2.5 rotate-45'
                     }`}
                   style={{
                     left: `${piece.left}%`,
@@ -175,11 +175,17 @@ export default function CakePage() {
               <p className="text-2xl md:text-3xl font-bold font-display text-foreground mb-4">
                 Happiest Birthday, Kavya
               </p>
+
               <p className="text-base sm:text-lg text-foreground/75 leading-relaxed font-light">
-                As you blow out those candles, remember that you deserve every good thing
-                coming your way. Your life is like a beautiful garden filled with loyal
-                dogs and radiant sunflowers — full of love, warmth, and natural beauty.
+                As you blow out those candles, I hope your wish finds its way to you...
+                <br />
+                aur jo kuch bhi tumhare dil mein hai, woh dheere-dheere haqeeqat ban jaaye.
+                <br /><br />
+                May this year bring you the kind of happiness that stays,
+                the kind of moments that become beautiful memories,
+                and countless little reasons to smile. ❤️
               </p>
+
               <div className="flex justify-center items-center gap-3 mt-6">
                 {[0, 1, 2, 3, 4].map((i) => (
                   <span
@@ -193,6 +199,8 @@ export default function CakePage() {
             </div>
           </div>
         )}
+
+
       </div>
     </div>
   )

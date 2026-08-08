@@ -19,9 +19,9 @@ export default function Home() {
 
   const pages = [
     { component: <WelcomePage />, label: 'Welcome' },
-    { component: <MemoriesPage />, label: 'Memories' },
-    { component: <MessagePage />, label: 'Messages' },
     { component: <CakePage />, label: 'Wish' },
+    { component: <MemoriesPage />, label: 'Memories' },
+    // { component: <MessagePage />, label: 'Messages' },
     { component: <FinalePageComponent />, label: 'Finale' },
   ]
 
