@@ -47,17 +47,17 @@ export default function CakePage() {
   }
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center px-4 py-16">
+    <div className="min-h-screen flex flex-col items-center justify-center px-4 pt-4 pb-36 sm:pt-20 sm:pb-32">
       <div className="max-w-2xl mx-auto w-full text-center">
         {/* Header */}
         <div className="mb-12 animate-bloom">
-          <p className="text-sm md:text-base uppercase tracking-[0.35em] text-rose-400 font-medium mb-3">
+          <p className="text-xs sm:text-sm md:text-base uppercase tracking-[0.2em] sm:tracking-[0.35em] text-rose-400 font-medium mb-3">
             Close your eyes and think of something lovely
           </p>
-          <h2 className="text-5xl md:text-6xl font-bold text-foreground mb-4">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-foreground mb-4">
             Make a Wish
           </h2>
-          <p className="text-lg text-muted-foreground font-light">
+          <p className="text-base sm:text-lg text-muted-foreground font-light">
             Tap the button and watch your candles light up the room
           </p>
         </div>
@@ -131,13 +131,12 @@ export default function CakePage() {
               {CONFETTI.map((piece) => (
                 <span
                   key={piece.id}
-                  className={`absolute top-0 animate-confetti ${piece.color} ${
-                    piece.shape === 0
+                  className={`absolute top-0 animate-confetti ${piece.color} ${piece.shape === 0
                       ? 'w-2 h-2 rounded-full'
                       : piece.shape === 1
                         ? 'w-1.5 h-3 rounded-sm'
                         : 'w-2.5 h-2.5 rotate-45'
-                  }`}
+                    }`}
                   style={{
                     left: `${piece.left}%`,
                     animationDelay: `${piece.delay}s`,
@@ -160,10 +159,10 @@ export default function CakePage() {
               Make a Wish
             </button>
           ) : (
-            <div className="flex items-center justify-center gap-3 text-2xl md:text-3xl font-bold font-display text-foreground animate-bloom">
-              <Sparkles className="w-7 h-7 text-amber-400 animate-spin-slow" />
+            <div className="flex items-center justify-center gap-2 sm:gap-3 text-lg sm:text-2xl md:text-3xl font-bold font-display text-foreground animate-bloom">
+              <Sparkles className="w-5 h-5 sm:w-7 sm:h-7 text-amber-400 animate-spin-slow" />
               Your wish is on its way
-              <Sparkles className="w-7 h-7 text-amber-400 animate-spin-slow" />
+              <Sparkles className="w-5 h-5 sm:w-7 sm:h-7 text-amber-400 animate-spin-slow" />
             </div>
           )}
         </div>
@@ -171,12 +170,12 @@ export default function CakePage() {
         {/* Message after blowing candles */}
         {showMessage && (
           <div className="mt-10 animate-bloom space-y-6">
-            <div className="bg-white/80 backdrop-blur rounded-3xl p-8 md:p-9 shadow-xl border border-rose-100">
+            <div className="bg-white/80 backdrop-blur rounded-3xl p-6 sm:p-8 md:p-9 shadow-xl border border-rose-100">
               <Heart className="w-6 h-6 text-rose-400 mx-auto mb-4 animate-heartbeat" />
               <p className="text-2xl md:text-3xl font-bold font-display text-foreground mb-4">
                 Happiest Birthday, Kavya
               </p>
-              <p className="text-lg text-foreground/75 leading-relaxed font-light">
+              <p className="text-base sm:text-lg text-foreground/75 leading-relaxed font-light">
                 As you blow out those candles, remember that you deserve every good thing
                 coming your way. Your life is like a beautiful garden filled with loyal
                 dogs and radiant sunflowers — full of love, warmth, and natural beauty.
@@ -185,9 +184,8 @@ export default function CakePage() {
                 {[0, 1, 2, 3, 4].map((i) => (
                   <span
                     key={i}
-                    className={`w-2.5 h-2.5 rotate-45 animate-heartbeat ${
-                      i % 2 === 0 ? 'bg-rose-400' : 'bg-amber-400'
-                    }`}
+                    className={`w-2.5 h-2.5 rotate-45 animate-heartbeat ${i % 2 === 0 ? 'bg-rose-400' : 'bg-amber-400'
+                      }`}
                     style={{ animationDelay: `${i * 180}ms` }}
                   />
                 ))}

@@ -35,19 +35,18 @@ export default function FinalePageComponent() {
   )
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center px-4 py-16 relative overflow-hidden">
+    <div className="min-h-screen flex flex-col items-center justify-center px-4 pt-4 pb-36 sm:pt-20 sm:pb-32 relative overflow-hidden">
       {/* Animated Confetti */}
       {showConfetti &&
         confettiPieces.map((piece) => (
           <span
             key={piece.id}
-            className={`absolute top-0 animate-confetti ${piece.color} ${
-              piece.shape === 0
-                ? 'w-2.5 h-2.5 rounded-full'
+            className={`absolute top-0 animate-confetti ${piece.color} ${piece.shape === 0
+                ? 'w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full'
                 : piece.shape === 1
-                  ? 'w-2 h-3.5 rounded-sm'
-                  : 'w-3 h-3 rotate-45'
-            }`}
+                  ? 'w-1.5 h-2.5 sm:w-2 sm:h-3.5 rounded-sm'
+                  : 'w-2 h-2 sm:w-3 sm:h-3 rotate-45'
+              }`}
             style={{
               left: `${piece.left}%`,
               animationDelay: `${piece.delay}s`,
@@ -59,10 +58,10 @@ export default function FinalePageComponent() {
       <div className="max-w-2xl mx-auto w-full text-center z-10 animate-bloom">
         {/* Main Message */}
         <div className="mb-12">
-          <p className="text-sm md:text-base uppercase tracking-[0.35em] text-rose-400 font-medium mb-3 animate-fade-up">
+          <p className="text-xs sm:text-sm md:text-base uppercase tracking-[0.2em] sm:tracking-[0.35em] text-rose-400 font-medium mb-3 animate-fade-up">
             For the very last thing
           </p>
-          <h2 className="text-5xl md:text-7xl font-bold mb-4 animate-fade-up" style={{ animationDelay: '100ms' }}>
+          <h2 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-4 animate-fade-up" style={{ animationDelay: '100ms' }}>
             <span className="bg-gradient-to-r from-rose-400 via-amber-400 to-emerald-400 text-shimmer animate-gradient-x">
               One More Thing
             </span>
@@ -75,13 +74,13 @@ export default function FinalePageComponent() {
         </div>
 
         {/* Special Message Card */}
-        <div className="bg-white/75 backdrop-blur rounded-3xl p-9 md:p-11 shadow-xl border border-rose-100 mb-12 animate-bloom" style={{ animationDelay: '250ms' }}>
+        <div className="bg-white/75 backdrop-blur rounded-3xl p-6 sm:p-9 md:p-11 shadow-xl border border-rose-100 mb-12 animate-bloom" style={{ animationDelay: '250ms' }}>
           <div className="space-y-6">
             <p className="text-2xl md:text-3xl font-bold font-display text-foreground">
               You are truly amazing
             </p>
 
-            <div className="space-y-4 text-lg text-foreground/75 leading-relaxed font-light">
+            <div className="space-y-4 text-base sm:text-lg text-foreground/75 leading-relaxed font-light">
               <p>
                 This day is a celebration of everything that makes you special. Your
                 kindness, your laughter, your love for dogs, and your appreciation for
@@ -130,7 +129,7 @@ export default function FinalePageComponent() {
           <div className="mb-6">
             <div className="flex justify-center items-center gap-3 mb-3">
               <span className="w-2.5 h-2.5 rotate-45 bg-rose-400 animate-heartbeat" />
-              <p className="text-2xl md:text-3xl font-bold font-display text-foreground">
+              <p className="text-xl sm:text-2xl md:text-3xl font-bold font-display text-foreground">
                 Here&rsquo;s to you, Kavya
               </p>
               <span className="w-2.5 h-2.5 rotate-45 bg-amber-400 animate-heartbeat" style={{ animationDelay: '0.3s' }} />
