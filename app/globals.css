@@ -1,0 +1,367 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+.font-display {
+  font-family: var(--font-display), ui-serif, Georgia, serif;
+}
+
+@layer base {
+  :root {
+    --background: 38 60% 97%;
+    --foreground: 345 28% 20%;
+    --card: 0 0% 100%;
+    --card-foreground: 345 28% 20%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 345 28% 20%;
+    --primary: 348 76% 60%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 40 92% 54%;
+    --secondary-foreground: 345 30% 15%;
+    --muted: 38 40% 92%;
+    --muted-foreground: 345 14% 44%;
+    --accent: 148 35% 50%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 38 45% 88%;
+    --input: 38 45% 88%;
+    --ring: 348 76% 60%;
+    --chart-1: 348 76% 60%;
+    --chart-2: 40 92% 54%;
+    --chart-3: 148 35% 50%;
+    --chart-4: 290 40% 55%;
+    --chart-5: 18 90% 62%;
+    --radius: 1.25rem;
+    --sidebar-background: 38 60% 97%;
+    --sidebar-foreground: 345 28% 20%;
+    --sidebar-primary: 348 76% 60%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 40 92% 54%;
+    --sidebar-accent-foreground: 345 30% 15%;
+    --sidebar-border: 38 45% 88%;
+    --sidebar-ring: 348 76% 60%;
+  }
+  .dark {
+    --background: 345 30% 9%;
+    --foreground: 38 50% 94%;
+    --card: 345 24% 13%;
+    --card-foreground: 38 50% 94%;
+    --popover: 345 24% 13%;
+    --popover-foreground: 38 50% 94%;
+    --primary: 348 76% 66%;
+    --primary-foreground: 345 30% 10%;
+    --secondary: 40 90% 58%;
+    --secondary-foreground: 345 30% 12%;
+    --muted: 345 18% 22%;
+    --muted-foreground: 38 30% 72%;
+    --accent: 148 32% 46%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 345 18% 24%;
+    --input: 345 18% 24%;
+    --ring: 348 76% 66%;
+    --chart-1: 348 76% 66%;
+    --chart-2: 40 90% 58%;
+    --chart-3: 148 32% 46%;
+    --chart-4: 290 40% 60%;
+    --chart-5: 18 90% 66%;
+    --sidebar-background: 345 24% 13%;
+    --sidebar-foreground: 38 50% 94%;
+    --sidebar-primary: 348 76% 66%;
+    --sidebar-primary-foreground: 345 30% 10%;
+    --sidebar-accent: 40 90% 58%;
+    --sidebar-accent-foreground: 345 30% 12%;
+    --sidebar-border: 345 18% 24%;
+    --sidebar-ring: 348 76% 66%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* ============ Custom Keyframes ============ */
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0) translateX(0) scale(1);
+  }
+  33% {
+    transform: translateY(-18px) translateX(10px) scale(1.04);
+  }
+  66% {
+    transform: translateY(12px) translateX(-10px) scale(0.97);
+  }
+}
+
+@keyframes drift {
+  0%,
+  100% {
+    transform: translateX(0) translateY(0);
+  }
+  50% {
+    transform: translateX(40px) translateY(-30px);
+  }
+}
+
+@keyframes bloom {
+  0% {
+    opacity: 0;
+    transform: scale(0.9) translateY(18px);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.02) translateY(-3px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(26px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes shimmer {
+  to {
+    background-position: 200% center;
+  }
+}
+
+@keyframes petal-fall {
+  0% {
+    transform: translateY(-10vh) translateX(0) rotate(0deg);
+    opacity: 0;
+  }
+  12% {
+    opacity: 0.9;
+  }
+  100% {
+    transform: translateY(112vh) translateX(6vw) rotate(320deg);
+    opacity: 0;
+  }
+}
+
+@keyframes sparkle {
+  0%,
+  100% {
+    opacity: 0.15;
+    transform: scale(0.7);
+  }
+  50% {
+    opacity: 0.9;
+    transform: scale(1);
+  }
+}
+
+@keyframes flicker {
+  0%,
+  100% {
+    transform: scale(1) rotate(-2deg);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.18) rotate(3deg);
+    opacity: 0.85;
+  }
+}
+
+@keyframes glow {
+  0%,
+  100% {
+    box-shadow: 0 0 18px 2px rgba(236, 120, 140, 0.35);
+  }
+  50% {
+    box-shadow: 0 0 40px 10px rgba(236, 120, 140, 0.55);
+  }
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes gradient-x {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes heartbeat {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  14% {
+    transform: scale(1.16);
+  }
+  28% {
+    transform: scale(1);
+  }
+  42% {
+    transform: scale(1.16);
+  }
+  70% {
+    transform: scale(1);
+  }
+}
+
+@keyframes page-in {
+  0% {
+    opacity: 0;
+    transform: translateY(34px) scale(0.985);
+    filter: blur(4px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
+}
+
+@keyframes confetti-fall {
+  0% {
+    transform: translateY(-10vh) rotateZ(0deg);
+    opacity: 0;
+  }
+  6% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(110vh) rotateZ(720deg);
+    opacity: 0.15;
+  }
+}
+
+@keyframes candle-glow {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.75;
+  }
+}
+
+@keyframes smoke-rise {
+  0% {
+    transform: translateY(0) translateX(0) scale(0.6);
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(-70px) translateX(14px) scale(1.4);
+    opacity: 0;
+  }
+}
+
+/* ============ Utilities ============ */
+
+@layer utilities {
+  .animate-float {
+    animation: float 7s ease-in-out infinite;
+  }
+  .animate-float-slow {
+    animation: float 12s ease-in-out infinite;
+  }
+  .animate-drift {
+    animation: drift 16s ease-in-out infinite;
+  }
+  .animate-bloom {
+    animation: bloom 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+  .animate-fade-up {
+    animation: fade-up 0.8s ease-out both;
+  }
+  .animate-shimmer {
+    background-size: 200% auto;
+    animation: shimmer 5s linear infinite;
+  }
+  .animate-petal {
+    animation: petal-fall linear infinite;
+  }
+  .animate-sparkle {
+    animation: sparkle 4s ease-in-out infinite;
+  }
+  .animate-flicker {
+    animation: flicker 0.5s ease-in-out infinite;
+  }
+  .animate-glow {
+    animation: glow 3.5s ease-in-out infinite;
+  }
+  .animate-spin-slow {
+    animation: spin-slow 26s linear infinite;
+  }
+  .animate-gradient-x {
+    background-size: 200% 200%;
+    animation: gradient-x 6s ease-in-out infinite;
+  }
+  .animate-heartbeat {
+    animation: heartbeat 1.8s ease-in-out infinite;
+  }
+  .animate-page-in {
+    animation: page-in 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+  .animate-confetti {
+    animation: confetti-fall linear both;
+  }
+  .animate-candle-glow {
+    animation: candle-glow 1.6s ease-in-out infinite;
+  }
+  .animate-smoke {
+    animation: smoke-rise 2s ease-out forwards;
+  }
+
+  .text-shimmer {
+    background-size: 200% auto;
+    animation: shimmer 5s linear infinite;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
+
+  .glass {
+    background: rgba(255, 255, 255, 0.55);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+}
