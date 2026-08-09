@@ -20,10 +20,10 @@ export default function WelcomePage() {
           </p>
           <h1 className="text-4xl sm:text-6xl md:text-7xl font-bold text-foreground mb-3 drop-shadow-sm animate-fade-up" style={{ animationDelay: '200ms' }}>
             Happy Birthday
+            <span className="block p-4 text-5xl sm:text-7xl md:text-8xl font-bold bg-gradient-to-r from-rose-400 via-amber-400 to-rose-400 text-shimmer animate-gradient-x">
+              Kavya
+            </span>
           </h1>
-          <h2 className="p-4 text-5xl sm:text-7xl md:text-8xl font-bold bg-gradient-to-r from-rose-400 via-amber-400 to-rose-400 text-shimmer animate-gradient-x">
-            Kavya
-          </h2>
         </div>
 
         {/* Decorative Text */}
