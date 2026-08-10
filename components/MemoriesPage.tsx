@@ -62,82 +62,6 @@ export default function MemoriesPage() {
 
         </div>
 
-        {/* Memory Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {memories.map((memory, index) => {
-            const Icon = memory.icon
-
-            return (
-              <div
-                key={index}
-                className="group relative rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border-2 border-white/70 animate-bloom"
-                style={{
-                  animationDelay: `${200 + index * 120}ms`,
-                }}
-              >
-                {/* Background Image */}
-                <div
-                  className="absolute inset-0 bg-cover bg-center transition-transform duration-[2.5s] ease-out group-hover:scale-110"
-                  style={{
-                    backgroundImage: `url(${memory.bg})`,
-                  }}
-                />
-
-                {/* Gradient Overlay */}
-                <div
-                  className={`absolute inset-0 bg-gradient-to-t ${memory.accent} transition-opacity duration-500 opacity-90 group-hover:opacity-80`}
-                />
-
-                {/* Content */}
-                <div className="relative z-10 text-white px-7 py-9">
-                  <div className="flex items-center gap-3 mb-4">
-                    <span className="flex items-center justify-center w-11 h-11 rounded-2xl bg-white/20 backdrop-blur border border-white/30 shadow-inner">
-                      <Icon className="w-5 h-5" />
-                    </span>
-
-                    <h3 className="text-2xl font-bold font-display drop-shadow-sm">
-                      {memory.title}
-                    </h3>
-                  </div>
-
-                  <p className="leading-relaxed text-white/90 font-light">
-                    {memory.description}
-                  </p>
-
-                  <div className="mt-5 h-0.5 w-12 bg-white/40 rounded-full transition-all duration-500 group-hover:w-24 group-hover:bg-white/70" />
-                </div>
-              </div>
-            )
-          })}
-        </div>
-
-        {/* Sunflower Image */}
-        <div
-          className="mt-12 mb-12 group animate-bloom"
-          style={{
-            animationDelay: '150ms',
-          }}
-        >
-          <div className="relative w-full h-64 md:h-80 rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white/70 ring-1 ring-amber-200/60">
-            <Image
-              src="/sunflower.jpg"
-              alt="A field of golden sunflowers"
-              fill
-              className="object-cover transition-transform duration-[2.5s] ease-out group-hover:scale-110"
-            />
-
-            <div className="absolute inset-0 bg-gradient-to-t from-rose-900/40 via-transparent to-transparent" />
-
-            <div className="absolute bottom-5 left-1/2 -translate-x-1/2 text-white/95 text-sm md:text-base tracking-[0.18em] uppercase font-light text-center">
-              I may know only a little...
-              <br />
-              <span className="normal-case tracking-normal text-base md:text-lg">
-                but I’d love to know the rest of your story.
-              </span>
-            </div>
-          </div>
-        </div>
-
 
         {/* Final Note */}
         <div
@@ -265,6 +189,84 @@ export default function MemoriesPage() {
             That's all.
           </p>
         </div>
+
+        {/* Memory Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {memories.map((memory, index) => {
+            const Icon = memory.icon
+
+            return (
+              <div
+                key={index}
+                className="group relative rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border-2 border-white/70 animate-bloom"
+                style={{
+                  animationDelay: `${200 + index * 120}ms`,
+                }}
+              >
+                {/* Background Image */}
+                <div
+                  className="absolute inset-0 bg-cover bg-center transition-transform duration-[2.5s] ease-out group-hover:scale-110"
+                  style={{
+                    backgroundImage: `url(${memory.bg})`,
+                  }}
+                />
+
+                {/* Gradient Overlay */}
+                <div
+                  className={`absolute inset-0 bg-gradient-to-t ${memory.accent} transition-opacity duration-500 opacity-90 group-hover:opacity-80`}
+                />
+
+                {/* Content */}
+                <div className="relative z-10 text-white px-7 py-9">
+                  <div className="flex items-center gap-3 mb-4">
+                    <span className="flex items-center justify-center w-11 h-11 rounded-2xl bg-white/20 backdrop-blur border border-white/30 shadow-inner">
+                      <Icon className="w-5 h-5" />
+                    </span>
+
+                    <h3 className="text-2xl font-bold font-display drop-shadow-sm">
+                      {memory.title}
+                    </h3>
+                  </div>
+
+                  <p className="leading-relaxed text-white/90 font-light">
+                    {memory.description}
+                  </p>
+
+                  <div className="mt-5 h-0.5 w-12 bg-white/40 rounded-full transition-all duration-500 group-hover:w-24 group-hover:bg-white/70" />
+                </div>
+              </div>
+            )
+          })}
+        </div>
+
+        {/* Sunflower Image */}
+        <div
+          className="mt-12 mb-12 group animate-bloom"
+          style={{
+            animationDelay: '150ms',
+          }}
+        >
+          <div className="relative w-full h-64 md:h-80 rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white/70 ring-1 ring-amber-200/60">
+            <Image
+              src="/sunflower.jpg"
+              alt="A field of golden sunflowers"
+              fill
+              className="object-cover transition-transform duration-[2.5s] ease-out group-hover:scale-110"
+            />
+
+            <div className="absolute inset-0 bg-gradient-to-t from-rose-900/40 via-transparent to-transparent" />
+
+            <div className="absolute bottom-5 left-1/2 -translate-x-1/2 text-white/95 text-sm md:text-base tracking-[0.18em] uppercase font-light text-center">
+              I may know only a little...
+              <br />
+              <span className="normal-case tracking-normal text-base md:text-lg">
+                but I’d love to know the rest of your story.
+              </span>
+            </div>
+          </div>
+        </div>
+
+
 
         {/* 
         <div
