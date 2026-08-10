@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     google: 'JyWDDITT_ITTTa9PcWR_W9ONteZXE15t3E5A5jEVyDw'
   },
   title: {
-    default: 'Happy Birthday Kavya | Special Birthday Wishes & Celebration',
+    default: 'Happy Birthday Kavya',
     template: '%s | Happy Birthday Kavya',
   },
   description:
@@ -55,9 +55,9 @@ export const metadata: Metadata = {
     type: 'website',
     url: 'https://kavya-happy-birthday.vercel.app/',
     siteName: 'Happy Birthday Kavya',
-    title: 'Happy Birthday Kavya | Special Birthday Wishes & Celebration',
+    title: 'Happy Birthday Kavya',
     description:
-      'A heartfelt Happy Birthday Kavya website filled with birthday wishes, memories and love. A special celebration made just for Kavya.',
+      'A special celebration made just for Kavya.',
     locale: 'en_US',
     images: [
       {
