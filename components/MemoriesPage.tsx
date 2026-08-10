@@ -15,7 +15,7 @@ const memories: Memory[] = [
   {
     title: 'A Heart for Every Soul',
     description:
-      'Main tumhare baare mein abhi itna kuch nahi jaanta, shayad jitna jan na chahiye utna bhi nahi. Bas itna dekha hai ki tumhe animals se kitna pyaar hai... aur sach kahun, kisi be-zubaan jaan ke liye itni softness dekhkar tum aur bhi achhi lagti ho. Shayad isi chhoti si baat ne mujhe tumhe thoda aur jan ne ki khwahish di.',
+      'Main tumhare baare mein abhi itna kuch nahi jaanta, shayad jitna jan na chahiye utna bhi nahi. Bas itna dekha hai ki tumhe animals se kitna pyaar hai... aur sach kahun, kisi be zubaan jaan ke liye itni softness dekhkar aap muje aur bhi achhi lagti ho.',
     icon: Dog,
     bg: '/dog.jpg',
     accent: 'from-amber-500/70 to-amber-700/60',
@@ -23,15 +23,14 @@ const memories: Memory[] = [
   {
     title: 'The Way You Bloom',
     description:
-      'Tumhe shayad khud bhi nahi pata, but there is something warm about you. Jaise sunflower bina kuch kahe roshni ki taraf mudta hai... waise hi tumhari kuch chhoti-chhoti baatein mujhe tumhari taraf kheenchti hain. I know only little bit about you, but somehow, that little has been enough to make me curious about the rest.',
+      'Tumhe shayad khud bhi nahi pata, but there is something warm about you. Jaise sunflower bina kuch kahe roshni ki taraf mudta hai... waise hi tumhari kuch chhoti-chhoti baatein mujhe tumhari taraf kheenchti hain. There is a certain warmth in the way you carry yourself, and somehow, it feels really nice to notice.',
     icon: Sun,
     bg: '/sunflowers.jpg',
     accent: 'from-rose-500/70 to-rose-700/60',
   },
   {
     title: 'A Beautiful Soul',
-    description:
-      'Main yeh nahi keh sakta ki main tumhe poori tarah jaanta hoon... But Jitna dekha hai, jitna samjha hai, usmein ek ajeeb si khoobsurti hai. Tumhari hasi, tumhari little things, tumhara way of being... pata nahi kyun, par dil ko achha lagta hai. Aur shayad isi liye main tumhe aur jan na chahta hoon.',
+    description: 'Tumhari khoobsurti sirf tumhari hasi ya looks mein nahi, balki tumhare dil mein bhi hai. Ummeed ke saath bachchon ke liye apna waqt dena, aur animals ke liye tumhari care... yeh sab dekhkar bas itna lagta hai ki tumhara heart genuinely bahut pure hai.',
     icon: Sparkles,
     bg: '/soul.jpg',
     accent: 'from-violet-500/70 to-purple-700/60',
@@ -39,7 +38,7 @@ const memories: Memory[] = [
   {
     title: 'A Journey I’d Like to Know',
     description:
-      'Zindagi ke baare mein tumhari kahani mujhe abhi bahut kam pata hai. Tumhari pasand, tumhare dreams, tumhari khushiyan, tumhari chhoti si duniya, there is still so much I don’t know. But maybe that is what makes it beautiful... kyunki jo thoda sa jaana hai, usne mujhe baaki sab jaan-ne ki khwahish de di.',
+      'Zindagi ke baare mein tumhari kahani mujhe abhi bahut kam pata hai. Tumhari pasand, tumhare dreams, tumhari khushiyan, tumhari chhoti si duniya, there is still so much I don’t know. But maybe that is what makes it beautiful... kyunki jo thoda sa jaana hai, usne mujhe baaki sab jan ne ki khwahish de di.',
     icon: Compass,
     bg: '/advanture.jpg',
     accent: 'from-emerald-500/70 to-teal-700/60',
@@ -61,15 +60,6 @@ export default function MemoriesPage() {
             I Found Something Beautiful
           </h1>
 
-          {/* <p className="mt-5 text-gray-600 max-w-2xl mx-auto leading-relaxed">
-            Shayad main tumhe abhi itna nahi jaanta...
-            <br />
-            par jitna bhi jaana hai, usmein tum mujhe bahut achhi lagi ho.
-          </p> */}
-          {/* 
-          <p className="mt-7 text-xl md:text-2xl font-display text-rose-600">
-            And maybe, I’d like to know you a little more...
-          </p> */}
         </div>
 
         {/* Memory Cards */}
@@ -148,14 +138,142 @@ export default function MemoriesPage() {
           </div>
         </div>
 
-        {/* Final Note */}
 
+        {/* Final Note */}
         <div
           className="max-w-3xl mx-auto text-center mt-16 animate-bloom mb-16"
           style={{
             animationDelay: '700ms',
           }}
         >
+          <p className="text-gray-500 leading-relaxed font-light">
+            Main tumhare baare mein itna sab nahi jaanta.
+            <br />
+            Shayad jitna jaanna chahiye, utna bhi nahi...
+          </p>
+
+          <p className="mt-7 text-lg md:text-xl text-rose-600 font-display leading-relaxed">
+            Par jitna bhi jaana hai,
+            <br />
+            <span className="italic">
+              you already seem really special to me.
+            </span>
+          </p>
+
+          <div className="my-10 flex justify-center">
+            <div className="h-px w-16 bg-rose-200" />
+          </div>
+
+          <p className="text-gray-500 leading-relaxed font-light">
+            Shayad tum soch rahi hogi...
+            <br />
+            <span className="text-gray-700">
+              ki main tumhare liye yeh sab kyun kar raha hoon,
+              <br />
+              jabki humne abhi itni baat bhi nahi ki hai.
+            </span>
+          </p>
+
+          <p className="mt-6 text-gray-500 leading-relaxed font-light">
+            Aur honestly, iska koi perfect jawab mere paas bhi nahi hai.
+            <br />
+            Bas itna jaanta hoon ki tum mujhe achhi lagi...
+            <br />
+            tumhari smile, tumhari looks,
+            <br />
+            aur jis tarah tum apne aas paas ki cheezon, logon aur animals ke liye care karti ho.
+            <br />
+            Shayad inhi chhoti-chhoti cheezon ne
+            <br />
+            mujhe tumhe thoda aur jaanne ki curiosity di.
+          </p>
+
+          <p className="mt-7 text-gray-500 leading-relaxed font-light">
+            Hum sirf garba class mein mile hain,
+            <br />
+            aur main waise bhi offline thoda introvert hoon,
+            <br />
+            isliye tumse kabhi properly baat nahi kar paya.
+            <br />
+            Lekin jo thoda sa dekha aur jaana,
+            <br />
+            woh mujhe genuinely achha laga.
+          </p>
+
+          <p className="mt-7 text-gray-500 leading-relaxed font-light">
+
+            Shayad main woh insaan bhi nahi hoon
+            <br />
+            jo tumhare liye perfect ho.
+            <br />
+            Aur shayad isi wajah se,
+            <br />
+            yeh sab kehne mein thoda darr bhi lagta hai.
+          </p>
+
+          <p className="mt-6 text-gray-500 leading-relaxed font-light">
+            Lekin ek cheez aur zyada darrati hai...
+            <br />
+            <span>
+              ki mere andar iska regret na reh jaye,
+              <br />
+              ki maine kabhi tumhe bataya hi nahi.
+            </span>
+          </p>
+
+          <p className="mt-6 text-gray-500 leading-relaxed font-light">
+            Isliye aaj bas itna kehna tha...
+            <br />
+            bina kisi expectation ke,
+            <br />
+            bina kisi pressure ke,
+            <br />
+            aur bina tumse kisi jawab ki umeed rakhe.
+          </p>
+
+          <p className="mt-7 text-lg md:text-xl text-rose-600 font-display leading-relaxed">
+            <span className="italic">
+              I would simply like to know you a little more,
+              <br />
+              if you're comfortable with that.
+            </span>
+          </p>
+
+          <p className="mt-7 text-gray-500 leading-relaxed font-light">
+            Aur agar waqt ke saath,
+            <br />
+            hum bas ek achhi si dosti tak hi pahunch paaye...
+            <br />
+            toh bhi main usse kam khoobsurat nahi samjhunga.
+          </p>
+
+          <p className="mt-7 text-gray-500 leading-relaxed font-light">
+            Tumhe kuch kehna zaroori nahi hai.
+            <br />
+            Jo tum feel karti ho,
+            <br />
+            uski apni jagah hai.
+            <br />
+            <span className="text-rose-500/90">
+              And whatever it is, I will respect it.
+            </span>
+          </p>
+
+          <p className="mt-8 text-gray-600 font-display italic text-base md:text-lg">
+            I just wanted you to know.
+            <br />
+            That's all.
+          </p>
+        </div>
+
+        {/* 
+        <div
+          className="max-w-3xl mx-auto text-center mt-16 animate-bloom mb-16"
+          style={{
+            animationDelay: '700ms',
+          }}
+        >
+
           <p className="text-gray-500 leading-relaxed font-light">
             Main tumhare baare mein itna sab nahi jaanta.
             <br />
@@ -197,8 +315,8 @@ export default function MemoriesPage() {
           <p className="mt-6 text-gray-500 leading-relaxed font-light">
             Lekin ek cheez aur zyada darrati hai...
             <br />
-            <span className="text-gray-700">
-              ki kahin kal mujhe iska regret na ho
+            <span>
+              ki mere andar iska regret na reh jaye,
               <br />
               ki maine kabhi tumhe bataya hi nahi.
             </span>
@@ -217,30 +335,30 @@ export default function MemoriesPage() {
           <p className="mt-7 text-lg md:text-xl text-rose-600 font-display leading-relaxed">
             <br />
             <span className="italic">
-              ki I would like to know you a little more,
+              I would simply like to know you a little more,
               <br />
-
-              if you are okay with it.
+              if you're comfortable with that.
             </span>
           </p>
 
           <p className="mt-7 text-gray-500 leading-relaxed font-light">
-            Ab meri taraf se itna keh dena hi kaafi hai.
+            Aur agar waqt ke saath,
             <br />
-            Now mujhe yeh regret nahi rahega
+            hum bas ek achhi si dosti tak hi pahunch paaye...
             <br />
-            ki maine kabhi kaha hi nahi.
+            toh bhi main usse kam khoobsurat nahi samjhunga.
           </p>
+
 
           <p className="mt-7 text-gray-500 leading-relaxed font-light">
             Tumhe kuch kehna zaroori nahi hai.
             <br />
-            Agar tum nahi chahti,
+            Jo tum feel karti ho,
             <br />
-            toh that's completely okay.
+            uski apni jagah hai.
             <br />
             <span className="text-rose-500/90">
-              I will respect that, always.
+              And whatever it is, I will respect it.
             </span>
           </p>
 
@@ -249,49 +367,8 @@ export default function MemoriesPage() {
             <br />
             That's all.
           </p>
-        </div>
-
-        {/* Final Note
-        <div
-          className="max-w-3xl mx-auto text-center mt-16 animate-bloom mb-16"
-          style={{
-            animationDelay: '700ms',
-          }}
-        >
-          <p className="text-gray-500 leading-relaxed font-light">
-            <br />
-            main tumhare baare mein itna sab nahi jaanta.
-            <br />
-          </p>
-
-          <p className="mt-6 text-lg md:text-xl text-rose-600 font-display leading-relaxed">
-            Par jitna bhi jaana hai,
-            <br />
-            <span className="italic">
-              you already seem really special to me.
-            </span>
-          </p>
-
-          <p className="mt-5 text-gray-500 leading-relaxed font-light">
-            Aur shayad isi liye...
-            <br />
-            Agar aapko bhi theek lage, toh...
-            <br />
-
-            bina kisi jaldi ke,
-            <br />
-            bina kisi zid ke,
-            <br />
-            bina kisi haq ke,
-            <br />
-            bas dil se...
-            <br />
-            main aapko thoda aur jan na chahta hoon.
-            <br />
-            <span className="text-rose-500/90">
-            </span>
-          </p>
         </div> */}
+
 
       </div>
     </div>
