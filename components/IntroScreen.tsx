@@ -4,7 +4,7 @@ import { useCallback, useEffect, useRef, useState } from 'react'
 
 const LINES = [
   'Wait for it...',
-  'Something magical is brewing...',
+  'Something is meant just for you...',
   'Today is not just another day...',
   'It is...',
   '11th Aug',
@@ -92,7 +92,7 @@ export default function IntroScreen({ onComplete }: { onComplete: () => void }) 
 
         {isLastLine && !isTyping && (
           <p className="mt-6 text-rose-200/60 text-xs sm:text-sm tracking-[0.3em] uppercase animate-fade-in">
-            made just for you
+            A little something, made just for you ✨
           </p>
         )}
       </div>
