@@ -62,7 +62,7 @@ export default function IntroScreen({ onComplete }: { onComplete: () => void }) 
 
   return (
     <div
-      onClick={finish}
+      onClick={() => { }}
       role="button"
       aria-label="Skip intro"
       className={`fixed inset-0 z-[100] flex items-center justify-center bg-black select-none transition-opacity duration-1000 ${fading ? 'opacity-0' : 'opacity-100'
