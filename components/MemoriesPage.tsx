@@ -310,7 +310,6 @@ export default function MemoriesPage() {
           }}
         >
           <p className="text-gray-500 leading-relaxed font-light">
-            Aur haan...
             <br />
             main tumhare baare mein itna sab nahi jaanta.
             <br />

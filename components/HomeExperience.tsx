@@ -16,6 +16,10 @@ export default function HomeExperience() {
     setIsClient(true)
   }, [])
 
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }, [currentPage])
+
   const pages = [
     { component: <WelcomePage />, label: 'Welcome' },
     { component: <CakePage />, label: 'Wish' },

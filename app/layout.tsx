@@ -87,8 +87,8 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: '/placeholder-logo.svg',
-    shortcut: '/placeholder-logo.svg',
+    icon: '/placeholder-logo.png',
+    shortcut: '/placeholder-logo.png',
   },
 }
 

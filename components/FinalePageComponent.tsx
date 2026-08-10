@@ -83,8 +83,8 @@ export default function FinalePageComponent() {
             <div className="space-y-4 text-base sm:text-lg text-foreground/75 leading-relaxed font-light">
               <p>
                 This day is a celebration of everything that makes you special. Your
-                kindness, your laughter, your love for dogs, and your appreciation for
-                the beauty in life — like sunflowers.
+                kindness, your laughter, your love for animals, and your appreciation for
+                the beauty in life, like sunflowers.
               </p>
               <p>
                 You have a gift of making everyone around you feel valued and loved.
@@ -149,7 +149,7 @@ export default function FinalePageComponent() {
           </p>
 
           <div className="mt-8 text-foreground/50 text-xs tracking-[0.3em] uppercase">
-            Made Just for you from a friend
+            Made for you by a friend who cared… and an AI who helped ;)
           </div>
         </div>
       </div>
