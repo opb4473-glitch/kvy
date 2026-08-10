@@ -3,8 +3,8 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 
 const LINES = [
-  'Wait for it...',
-  'Something is meant just for you...',
+  'Wait for...',
+  'Something is just for you...',
   'Today is not just another day...',
   'It is...',
   '11th Aug',
