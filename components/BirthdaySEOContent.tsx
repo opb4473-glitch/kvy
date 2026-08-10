@@ -169,7 +169,7 @@ export default function BirthdaySEOContent() {
             </div>
 
             <p className="pt-4 text-center text-sm text-muted-foreground/80">
-              Happy Birthday Kavya — from a friend, made with love.
+              Happy Birthday Kavya — from a friend.
             </p>
           </div>
         </div>

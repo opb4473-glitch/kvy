@@ -7,10 +7,12 @@ import CakePage from '@/components/CakePage'
 import FinalePageComponent from '@/components/FinalePageComponent'
 import PageNavigation from '@/components/PageNavigation'
 import AnimatedBackground from '@/components/AnimatedBackground'
+import IntroScreen from '@/components/IntroScreen'
 
 export default function HomeExperience() {
   const [currentPage, setCurrentPage] = useState(0)
   const [isClient, setIsClient] = useState(false)
+  const [introDone, setIntroDone] = useState(false)
 
   useEffect(() => {
     setIsClient(true)
@@ -34,24 +36,32 @@ export default function HomeExperience() {
 
   return (
     <main className="relative min-h-screen overflow-hidden">
-      <AnimatedBackground />
+      {!introDone && <IntroScreen onComplete={() => setIntroDone(true)} />}
 
-      <div className="relative w-full min-h-screen">
-        {/* Page Display */}
-        <div className="w-full min-h-screen flex items-center justify-center">
-          <div key={currentPage} className="w-full animate-page-in">
-            {pages[currentPage].component}
+      {introDone && (
+        <>
+          <div className="animate-fade-in">
+            <AnimatedBackground />
           </div>
-        </div>
 
-        {/* Navigation */}
-        <PageNavigation
-          currentPage={currentPage}
-          totalPages={pages.length}
-          labels={pages.map((p) => p.label)}
-          onPageChange={setCurrentPage}
-        />
-      </div>
+          <div className="relative w-full min-h-screen">
+            {/* Page Display */}
+            <div className="w-full min-h-screen flex items-center justify-center">
+              <div key={currentPage} className="w-full animate-page-in">
+                {pages[currentPage].component}
+              </div>
+            </div>
+
+            {/* Navigation */}
+            <PageNavigation
+              currentPage={currentPage}
+              totalPages={pages.length}
+              labels={pages.map((p) => p.label)}
+              onPageChange={setCurrentPage}
+            />
+          </div>
+        </>
+      )}
     </main>
   )
 }

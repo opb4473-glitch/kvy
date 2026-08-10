@@ -289,6 +289,34 @@ h4,
   }
 }
 
+@keyframes caret-blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
 /* ============ Utilities ============ */
 
 @layer utilities {
@@ -344,6 +372,15 @@ h4,
   }
   .animate-smoke {
     animation: smoke-rise 2s ease-out forwards;
+  }
+  .animate-caret {
+    animation: caret-blink 0.9s step-end infinite;
+  }
+  .animate-fade-in {
+    animation: fade-in 1s ease-out both;
+  }
+  .animate-fade-out {
+    animation: fade-out 1s ease-in both;
   }
 
   .text-shimmer {
