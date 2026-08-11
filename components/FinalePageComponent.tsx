@@ -148,9 +148,7 @@ export default function FinalePageComponent() {
             amazing adventures, and all the dog cuddles you can handle.
           </p>
 
-          <div className="mt-8 text-foreground/50 text-xs tracking-[0.3em] uppercase">
-            Made for you by a friend
-          </div>
+        
         </div>
       </div>
     </div>
