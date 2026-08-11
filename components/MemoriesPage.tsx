@@ -158,8 +158,7 @@ export default function MemoriesPage() {
           <p className="mt-7 text-lg md:text-xl text-rose-600 font-display leading-relaxed">
             <span className="italic">
               I would simply like to know you a little more,
-              <br />
-              if you're comfortable with that.
+            
             </span>
           </p>
 
@@ -238,34 +237,6 @@ export default function MemoriesPage() {
             )
           })}
         </div>
-
-        {/* Sunflower Image */}
-        <div
-          className="mt-12 mb-12 group animate-bloom"
-          style={{
-            animationDelay: '150ms',
-          }}
-        >
-          <div className="relative w-full h-64 md:h-80 rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white/70 ring-1 ring-amber-200/60">
-            <Image
-              src="/sunflower.jpg"
-              alt="A field of golden sunflowers"
-              fill
-              className="object-cover transition-transform duration-[2.5s] ease-out group-hover:scale-110"
-            />
-
-            <div className="absolute inset-0 bg-gradient-to-t from-rose-900/40 via-transparent to-transparent" />
-
-            <div className="absolute bottom-5 left-1/2 -translate-x-1/2 text-white/95 text-sm md:text-base tracking-[0.18em] uppercase font-light text-center">
-              I may know only a little...
-              <br />
-              <span className="normal-case tracking-normal text-base md:text-lg">
-                but I’d love to know the rest of your story.
-              </span>
-            </div>
-          </div>
-        </div>
-
 
 
         {/* 
