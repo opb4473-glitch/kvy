@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     siteName: 'Happy Birthday Kavya',
     title: 'Happy Birthday Kavya',
     description:
-      'A special celebration made just for Kavya.',
+      'A special celebration made just for you.',
     locale: 'en_US',
     images: [
       {
