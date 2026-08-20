@@ -122,18 +122,7 @@ export default function ShayriPage() {
           <span className="h-px w-12 bg-gradient-to-l from-transparent to-amber-400" />
         </div>
       </div>
-
-      {/* Header */}
-      <div className={`text-center mb-10 transition-all duration-1000 delay-200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
-        <p className="text-xs sm:text-sm uppercase tracking-[0.35em] text-rose-400 font-medium mb-3">
-          Dil Se
-        </p>
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold font-display text-foreground">
-          <span className={`bg-gradient-to-r ${currentShayri.accent} text-shimmer animate-gradient-x bg-clip-text text-transparent`}>
-            Shayri
-          </span>
-        </h2>
-      </div>
+ 
 
       {/* Shayri Card */}
       <div className={`max-w-2xl w-full mx-auto transition-all duration-1000 delay-400 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}>
