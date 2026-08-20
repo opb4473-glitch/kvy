@@ -21,8 +21,8 @@ const SHAYRI_LIST: Shayri[] = [
   },
 ]
 
-const CHAR_SPEED = 45
-const LINE_PAUSE = 800
+const CHAR_SPEED = 20
+const LINE_PAUSE = 1200
 const SHAYRI_PAUSE = 600
 
 function TypewriterText({ lines, onComplete }: { lines: string[]; onComplete?: () => void }) {
@@ -124,7 +124,7 @@ export default function ShayriPage() {
       </div>
 
       {/* Header */}
-      {/* <div className={`text-center mb-10 transition-all duration-1000 delay-200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
+      <div className={`text-center mb-10 transition-all duration-1000 delay-200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
         <p className="text-xs sm:text-sm uppercase tracking-[0.35em] text-rose-400 font-medium mb-3">
           Dil Se
         </p>
@@ -133,7 +133,7 @@ export default function ShayriPage() {
             Shayri
           </span>
         </h2>
-      </div> */}
+      </div>
 
       {/* Shayri Card */}
       <div className={`max-w-2xl w-full mx-auto transition-all duration-1000 delay-400 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}>
@@ -148,7 +148,7 @@ export default function ShayriPage() {
             </div>
 
             {/* Shayri content */}
-            <div className="relative z-10 pt-8">
+            <div className="relative z-10 pt-8 text-center">
               <TypewriterText
                 key={currentIndex}
                 lines={currentShayri.lines}
