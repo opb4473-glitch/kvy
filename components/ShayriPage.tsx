@@ -11,10 +11,11 @@ interface Shayri {
 const SHAYRI_LIST: Shayri[] = [
   {
     lines: [
-      'Tumhari muskaan mein ek ajeeb si duniya hai,',
-      'Jahan har gham bhi khushbu ban jaata hai.',
-      'Tumhari aankhon mein jo nami hai,',
-      'Woh mere dil ki sabse gehri kahani hai.',
+      'सपनों की शहज़ादी हो, या जन्नत की कोई हूर हो,',
+      'स्वर्ग की अप्सरा हो तुम, या धरती का कोई नूर हो।',
+      'धड़कन भी थम सी जाती है तुम्हें देखने के बाद,',
+      'खुदा की कसम...',
+      'तुम खूबसूरती का साक्षात सुरूर हो।'
     ],
     accent: 'from-rose-400 to-amber-400',
   },
@@ -123,7 +124,7 @@ export default function ShayriPage() {
       </div>
 
       {/* Header */}
-      <div className={`text-center mb-10 transition-all duration-1000 delay-200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
+      {/* <div className={`text-center mb-10 transition-all duration-1000 delay-200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
         <p className="text-xs sm:text-sm uppercase tracking-[0.35em] text-rose-400 font-medium mb-3">
           Dil Se
         </p>
@@ -132,7 +133,7 @@ export default function ShayriPage() {
             Shayri
           </span>
         </h2>
-      </div>
+      </div> */}
 
       {/* Shayri Card */}
       <div className={`max-w-2xl w-full mx-auto transition-all duration-1000 delay-400 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}>
