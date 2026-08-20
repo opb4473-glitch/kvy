@@ -6,6 +6,7 @@ import {
   Heart,
   Flower2,
   MessageCircleHeart,
+  Pen,
   Cake,
   Sparkles,
   type LucideIcon,
@@ -18,7 +19,7 @@ interface PageNavigationProps {
   onPageChange: (page: number) => void
 }
 
-const ICONS: LucideIcon[] = [Heart, Flower2, MessageCircleHeart, Cake, Sparkles]
+const ICONS: LucideIcon[] = [Heart, Flower2, MessageCircleHeart, Pen, Cake, Sparkles]
 
 export default function PageNavigation({
   currentPage,
