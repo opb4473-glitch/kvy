@@ -8,6 +8,7 @@ import FinalePageComponent from '@/components/FinalePageComponent'
 import PageNavigation from '@/components/PageNavigation'
 import AnimatedBackground from '@/components/AnimatedBackground'
 import IntroScreen from '@/components/IntroScreen'
+import ShayriPage from '@/components/ShayriPage'
 
 export default function HomeExperience() {
   const [currentPage, setCurrentPage] = useState(0)
@@ -27,6 +28,7 @@ export default function HomeExperience() {
     { component: <CakePage />, label: 'Wish' },
     { component: <MemoriesPage />, label: 'Memories' },
     // { component: <MessagePage />, label: 'Messages' },
+    { component: <ShayriPage />, label: 'Shayri' },
     { component: <FinalePageComponent />, label: 'Finale' },
   ]
 
