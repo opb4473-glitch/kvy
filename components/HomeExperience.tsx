@@ -28,7 +28,7 @@ export default function HomeExperience() {
     { component: <CakePage />, label: 'Wish' },
     { component: <MemoriesPage />, label: 'Memories' },
     // { component: <MessagePage />, label: 'Messages' },
-    { component: <ShayriPage />, label: 'Shayri' },
+    // { component: <ShayriPage />, label: 'Shayri' },
     { component: <FinalePageComponent />, label: 'Finale' },
   ]
 
