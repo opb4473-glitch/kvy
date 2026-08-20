@@ -15,13 +15,13 @@ const SHAYRI_LIST: Shayri[] = [
       'स्वर्ग की अप्सरा हो तुम, या धरती का कोई नूर हो।',
       'धड़कन भी थम सी जाती है तुम्हें देखने के बाद,',
       'खुदा की कसम...',
-      'तुम खूबसूरती का साक्षात सुरूर हो।'
+      'तुम तो खूबसूरती का साक्षात सुरूर हो।'
     ],
     accent: 'from-rose-400 to-amber-400',
   },
 ]
 
-const CHAR_SPEED = 20
+const CHAR_SPEED = 90
 const LINE_PAUSE = 1200
 const SHAYRI_PAUSE = 600
 
