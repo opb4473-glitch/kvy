@@ -70,7 +70,7 @@ export default function MemoriesPage() {
             animationDelay: '700ms',
           }}
         >
-          <p className="text-gray-500 leading-relaxed font-light">
+          <p className="text-gray-600 leading-relaxed font-light">
             Main tumhare baare mein itna sab nahi jaanta.
             <br />
             Shayad jitna jaanna chahiye, utna bhi nahi...
@@ -88,7 +88,7 @@ export default function MemoriesPage() {
             <div className="h-px w-16 bg-rose-200" />
           </div>
 
-          <p className="text-gray-500 leading-relaxed font-light">
+          <p className="text-gray-600 leading-relaxed font-light">
             Shayad tum soch rahi hogi...
             <br />
             <span className="text-gray-700">
@@ -98,7 +98,7 @@ export default function MemoriesPage() {
             </span>
           </p>
 
-          <p className="mt-6 text-gray-500 leading-relaxed font-light">
+          <p className="mt-6 text-gray-600 leading-relaxed font-light">
             Aur honestly, iska koi perfect jawab mere paas bhi nahi hai.
             <br />
             Bas itna jaanta hoon ki tum mujhe achhi lagi...
@@ -112,7 +112,7 @@ export default function MemoriesPage() {
             mujhe tumhe thoda aur jaanne ki curiosity di.
           </p>
 
-          <p className="mt-7 text-gray-500 leading-relaxed font-light">
+          <p className="mt-7 text-gray-600 leading-relaxed font-light">
             Hum sirf garba class mein mile hain,
             <br />
             aur main waise bhi offline thoda introvert hoon,
@@ -124,7 +124,7 @@ export default function MemoriesPage() {
             woh mujhe genuinely achha laga.
           </p>
 
-          <p className="mt-7 text-gray-500 leading-relaxed font-light">
+          <p className="mt-7 text-gray-600 leading-relaxed font-light">
 
             Shayad main woh insaan bhi nahi hoon
             <br />
@@ -135,7 +135,7 @@ export default function MemoriesPage() {
             yeh sab kehne mein thoda darr bhi lagta hai.
           </p>
 
-          <p className="mt-6 text-gray-500 leading-relaxed font-light">
+          <p className="mt-6 text-gray-600 leading-relaxed font-light">
             Lekin ek cheez aur zyada darrati hai...
             <br />
             <span>
@@ -145,7 +145,7 @@ export default function MemoriesPage() {
             </span>
           </p>
 
-          <p className="mt-6 text-gray-500 leading-relaxed font-light">
+          <p className="mt-6 text-gray-600 leading-relaxed font-light">
             Isliye aaj bas itna kehna tha...
             <br />
             bina kisi expectation ke,
@@ -158,11 +158,11 @@ export default function MemoriesPage() {
           <p className="mt-7 text-lg md:text-xl text-rose-600 font-display leading-relaxed">
             <span className="italic">
               I would simply like to know you a little more,
-            
+
             </span>
           </p>
 
-          <p className="mt-7 text-gray-500 leading-relaxed font-light">
+          <p className="mt-7 text-gray-600 leading-relaxed font-light">
             Aur agar waqt ke saath,
             <br />
             hum bas ek achhi si dosti tak hi pahunch paaye...
@@ -170,7 +170,7 @@ export default function MemoriesPage() {
             toh bhi main usse kam khoobsurat nahi samjhunga.
           </p>
 
-          <p className="mt-7 text-gray-500 leading-relaxed font-light">
+          <p className="mt-7 text-gray-600 leading-relaxed font-light">
             Tumhe kuch kehna zaroori nahi hai.
             <br />
             Jo tum feel karti ho,
@@ -247,7 +247,7 @@ export default function MemoriesPage() {
           }}
         >
 
-          <p className="text-gray-500 leading-relaxed font-light">
+          <p className="text-gray-600 leading-relaxed font-light">
             Main tumhare baare mein itna sab nahi jaanta.
             <br />
             Shayad jitna jaanna chahiye, utna bhi nahi...
@@ -265,7 +265,7 @@ export default function MemoriesPage() {
             <div className="h-px w-16 bg-rose-200" />
           </div>
 
-          <p className="text-gray-500 leading-relaxed font-light">
+          <p className="text-gray-600 leading-relaxed font-light">
             Aur...
             <br />
             <span className="text-gray-700">
@@ -273,7 +273,7 @@ export default function MemoriesPage() {
             </span>
           </p>
 
-          <p className="mt-6 text-gray-500 leading-relaxed font-light">
+          <p className="mt-6 text-gray-600 leading-relaxed font-light">
             Main perfect nahi hoon.
             <br />
             Shayad main woh insaan bhi nahi hoon
@@ -285,7 +285,7 @@ export default function MemoriesPage() {
             yeh kehne mein thoda darr bhi lagta hai.
           </p>
 
-          <p className="mt-6 text-gray-500 leading-relaxed font-light">
+          <p className="mt-6 text-gray-600 leading-relaxed font-light">
             Lekin ek cheez aur zyada darrati hai...
             <br />
             <span>
@@ -295,7 +295,7 @@ export default function MemoriesPage() {
             </span>
           </p>
 
-          <p className="mt-6 text-gray-500 leading-relaxed font-light">
+          <p className="mt-6 text-gray-600 leading-relaxed font-light">
             Isliye aaj bas itna kehna tha...
             <br />
             bina kisi expectation ke,
@@ -314,7 +314,7 @@ export default function MemoriesPage() {
             </span>
           </p>
 
-          <p className="mt-7 text-gray-500 leading-relaxed font-light">
+          <p className="mt-7 text-gray-600 leading-relaxed font-light">
             Aur agar waqt ke saath,
             <br />
             hum bas ek achhi si dosti tak hi pahunch paaye...
@@ -323,7 +323,7 @@ export default function MemoriesPage() {
           </p>
 
 
-          <p className="mt-7 text-gray-500 leading-relaxed font-light">
+          <p className="mt-7 text-gray-600 leading-relaxed font-light">
             Tumhe kuch kehna zaroori nahi hai.
             <br />
             Jo tum feel karti ho,
